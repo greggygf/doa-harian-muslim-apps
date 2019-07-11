@@ -50,6 +50,7 @@ public class DaftarAdapter extends
 
         Daftar item = listDaftar.get(i);
         listViewHolder.txtTitle.setText(item.getTitle());
+        listViewHolder.txtInstruction.setText(item.getInstruction());
         listViewHolder.txtArabDesc.setText(item.getArabDesc());
         listViewHolder.txtLatinDesc.setText(item.getLatinDesc());
     }
@@ -60,11 +61,12 @@ public class DaftarAdapter extends
     }
 
     public class DaftarViewHolder extends RecyclerView.ViewHolder {
-        public TextView txtTitle, txtArabDesc, txtLatinDesc;
+        public TextView txtTitle,txtInstruction, txtArabDesc, txtLatinDesc;
 
         public DaftarViewHolder(@NonNull View itemView) {
             super(itemView);
             txtTitle = itemView.findViewById(R.id.txtTitle);
+            txtInstruction = itemView.findViewById(R.id.txtInstruction);
             txtArabDesc = itemView.findViewById(R.id.txtArabDesc);
             txtLatinDesc = itemView.findViewById(R.id.txtLatinDesc);
             itemView.setOnClickListener(new View.OnClickListener() {
