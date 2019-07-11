@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SuccessActivity"></activity>
+        <activity android:name=".DzikirSoreActivity"></activity>
+        <activity android:name=".DzikirPagiActivity" />
+        <activity android:name=".SuccessActivity" />
         <activity android:name=".KritikSaranActivity" />
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".MainActivity">

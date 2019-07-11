@@ -18,4 +18,9 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent i = new Intent(MainMenuActivity.this, KritikSaranActivity.class);
         startActivity(i);
     }
+
+    public void clickDzikirPagi(View view) {
+        Intent i = new Intent(MainMenuActivity.this, DzikirPagiActivity.class);
+        startActivity(i);
+    }
 }
