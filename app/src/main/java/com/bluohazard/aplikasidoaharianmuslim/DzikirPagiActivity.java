@@ -173,6 +173,18 @@ public class DzikirPagiActivity extends AppCompatActivity implements DaftarAdapt
                 "أَسْتَغْفِرُ اللهَ وَأَتُوْبُ إِلَيْهِِ",
                 "“Aku memohon ampun kepada Allah dan bertobat kepada-Nya.”"));
 
+        // Sumber
+        listDaftar.add(new Daftar(
+                "Sumber",
+                "rumaysho.com" +
+                        "\n" +
+                        "muslim.or.id" +
+                        "\n" +
+                        "Aplikasi “Apa Doanya“",
+                "",
+                ""
+        ));
+
 
         daftarAdapter = new DaftarAdapter(listDaftar);
         daftarAdapter.setListener(this);

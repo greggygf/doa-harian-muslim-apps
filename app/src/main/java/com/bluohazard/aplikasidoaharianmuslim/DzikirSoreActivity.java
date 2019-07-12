@@ -166,6 +166,18 @@ public class DzikirSoreActivity extends AppCompatActivity implements DaftarAdapt
                 "أَعُوْذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَِِ",
                 "“Aku berlindung dengan kalimat-kalimat Allah yang sempurna, dari kejahatan makhluk yang diciptakanNya.”"));
 
+        // Sumber
+        listDaftar.add(new Daftar(
+                "Sumber",
+                "rumaysho.com" +
+                        "\n" +
+                        "muslim.or.id" +
+                        "\n" +
+                        "Aplikasi “Apa Doanya“",
+                "",
+                ""
+        ));
+
 
         daftarAdapter = new DaftarAdapter(listDaftar);
         daftarAdapter.setListener(this);
