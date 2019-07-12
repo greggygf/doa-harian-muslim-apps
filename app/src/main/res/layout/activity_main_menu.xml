@@ -7,6 +7,46 @@
     android:background="@color/colorBlue"
     tools:context=".MainMenuActivity">
 
+    <TextView
+        android:id="@+id/txtArabLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا"
+        android:fontFamily="@font/arab"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/txtArtiLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“Dan bertasbihlah kepada-Nya diwaktu pagi dan sore.”"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtArabLabel"
+        android:fontFamily="@font/nextartbold"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/txtAyatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ QS. Al-Ahzab : 42 ]"
+        android:textSize="10dp"
+        android:fontFamily="@font/nextart"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/txtArtiLabel"/>
+
     <Button
         android:id="@+id/buttonDzikirPagi"
         android:layout_width="350dp"
