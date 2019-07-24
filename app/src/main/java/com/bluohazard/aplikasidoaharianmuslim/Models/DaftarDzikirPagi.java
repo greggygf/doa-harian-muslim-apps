@@ -1,12 +1,27 @@
-package com.bluohazard.aplikasidoaharianmuslim.Model;
+package com.bluohazard.aplikasidoaharianmuslim.Models;
 
-public class Daftar {
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class DaftarDzikirPagi {
+
+    @Expose
+    @SerializedName("title")
     private String title;
+
+    @Expose
+    @SerializedName("instruction")
     private String instruction;
+
+    @Expose
+    @SerializedName("arabDesc")
     private String arabDesc;
+
+    @Expose
+    @SerializedName("latinDesc")
     private String latinDesc;
 
-    public Daftar(String title, String instruction, String arabDesc, String latinDesc) {
+    public DaftarDzikirPagi(String title, String instruction, String arabDesc, String latinDesc) {
         this.title = title;
         this.instruction = instruction;
         this.arabDesc = arabDesc;

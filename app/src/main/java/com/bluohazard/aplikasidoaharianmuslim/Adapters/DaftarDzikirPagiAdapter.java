@@ -1,4 +1,4 @@
-package com.bluohazard.aplikasidoaharianmuslim.Adapter;
+package com.bluohazard.aplikasidoaharianmuslim.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,27 +8,25 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bluohazard.aplikasidoaharianmuslim.Model.Daftar;
+import com.bluohazard.aplikasidoaharianmuslim.Models.DaftarDzikirPagi;
 import com.bluohazard.aplikasidoaharianmuslim.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DaftarAdapter extends
-        RecyclerView.Adapter<DaftarAdapter.DaftarViewHolder>
-{
+public class DaftarDzikirPagiAdapter extends
+        RecyclerView.Adapter<DaftarDzikirPagiAdapter.DaftarViewHolder> {
 
-    private List<Daftar> listDaftar = new ArrayList<>();
+    private List<DaftarDzikirPagi> listDaftarDzikirPagi = new ArrayList<>();
 
-    public DaftarAdapter(List<Daftar> listDaftar)
-    {
-        this.listDaftar = listDaftar;
+    public DaftarDzikirPagiAdapter(List<DaftarDzikirPagi> listDaftarDzikirPagi) {
+        this.listDaftarDzikirPagi = listDaftarDzikirPagi;
     }
 
     private OnDaftarClickListener listener;
 
     public interface OnDaftarClickListener {
-        public void onClick(View view, int position);
+        void onClick(View view, int position);
     }
 
     public void setListener(OnDaftarClickListener listener) {
@@ -48,7 +46,7 @@ public class DaftarAdapter extends
     @Override
     public void onBindViewHolder(@NonNull DaftarViewHolder listViewHolder, int i) {
 
-        Daftar item = listDaftar.get(i);
+        DaftarDzikirPagi item = listDaftarDzikirPagi.get(i);
         listViewHolder.txtTitle.setText(item.getTitle());
         listViewHolder.txtInstruction.setText(item.getInstruction());
         listViewHolder.txtArabDesc.setText(item.getArabDesc());
@@ -57,11 +55,11 @@ public class DaftarAdapter extends
 
     @Override
     public int getItemCount() {
-        return listDaftar.size();
+        return listDaftarDzikirPagi.size();
     }
 
     public class DaftarViewHolder extends RecyclerView.ViewHolder {
-        public TextView txtTitle,txtInstruction, txtArabDesc, txtLatinDesc;
+        public TextView txtTitle, txtInstruction, txtArabDesc, txtLatinDesc;
 
         public DaftarViewHolder(@NonNull View itemView) {
             super(itemView);
